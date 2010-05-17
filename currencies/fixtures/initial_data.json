@@ -1,13 +1,35 @@
 [
     {
-        "pk": 1, 
-        "model": "currencies.currency", 
-        "fields": {
-            "code": "EUR", 
-            "name": "Euro", 
-            "symbol": "\u20ac", 
-            "is_active": true, 
-            "is_default": true, 
+        "pk": 1,
+        "model": "currencies.currency",
+            "fields": {
+            "code": "GBP",
+            "name": "Pounds Sterling",
+            "symbol": "\u00A3",
+            "is_active": true,
+            "is_default": true,
+            "factor": "1"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "currencies.currency",
+            "fields": {
+            "code": "EUR",
+            "name": "Euros",
+            "symbol": "\u20ac",
+            "is_active": true,
+            "factor": "1"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "currencies.currency",
+            "fields": {
+            "code": "USD",
+            "name": "US Dollars",
+            "symbol": "\u0024",
+            "is_active": true,
             "factor": "1"
         }
     }
