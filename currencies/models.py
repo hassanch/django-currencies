@@ -6,7 +6,7 @@ class Currency(models.Model):
     code = models.CharField(max_length=3, primary_key=True)
     name = models.CharField(max_length=25)
     symbol = models.CharField(max_length=1)
-    factor = models.DecimalField(max_digits=10, decimal_places=4,
+    factor = models.DecimalField(max_digits=10, decimal_places=6,
         help_text=_('Specifies the difference of the currency to default one.'))
     is_active = models.BooleanField(default=True,
         help_text=_('The currency will be available.'))
